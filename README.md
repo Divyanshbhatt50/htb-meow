@@ -25,7 +25,7 @@ I started by scanning the target IP using Nmap:
 **nmap -sV 10.129.138.117**
 From the result, I found that only Telnet service (port 23/tcp) was open.
 
-📸 Screenshot: ![🛰️ Nmap Scan Result](./screenshots/Nmap-Output.png)
+📸 Screenshot: ![🛰️ Nmap Scan Result](./Screenshots/Nmap-Output.png)
 
 
 Then I used the following command to connect via Telnet:
@@ -36,19 +36,19 @@ Once connected, it only asked for a username. I tried:
 
 And I gained direct access into the system without any password.
 
-📸 Screenshot: ![📡 Telnet Login](./screenshots/Telnet-Login.png)
+📸 Screenshot: ![📡 Telnet Login](./Screenshots/Telnet-Login.png)
 
 After getting access inside Telnet, I started searching for files using:
 **ls -la**
 
-📸 Screenshot:![📁 File Listing](./screenshots/File-List.png)
+📸 Screenshot:![📁 File Listing](./Screenshots/File-List.png)
 
 I saw a file named flag.txt, so I ran:
 **cat flag.txt**
 
 This revealed the flag.
 
-📸 Screenshot: ![🏁 Flag Captured](./screenshots/Flag-Access.png)
+📸 Screenshot: ![🏁 Flag Captured](./Screenshots/Flag-Access.png)
 
 ---
 
